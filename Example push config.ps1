@@ -10,7 +10,7 @@ $devices = @()
 ################################################################
 # Import device list containing initial data. The below points to the most recent copy of the Statseeker import.
 ################################################################
-$list = Import-Csv "\\ad.aberdeenshire.gov.uk\acnet\Statseeker_data\Cisco_Complete.csv"
+$list = Import-Csv "Desktop\SNMPv3\Cisco_Complete.csv"
 
 ################################################################
 # Populate array from using details form imported list $ fields to be populated later
@@ -45,7 +45,7 @@ $devices += $device
 # Export array to create testing file - Remove for LIVE run of script
 ################################################################
 
-$devices | Export-Csv "C:\Users\sarchib2\Desktop\Powershell Hand Over\CiscoList.csv" -NoTypeInformation
+$devices | Export-Csv "Desktop\SNMPv3\CiscoList.csv" -NoTypeInformation
 
 ############################################################
 # Once file exported 'pick' out the required devices for testing
